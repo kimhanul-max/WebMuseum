@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>heartbeat</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.1/math.min.js"></script>
+  <style>
+    #chartContainer {
+      width: 1000px;
+      height: 1000px;
+      margin: 50px auto;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chartContainer">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div class="container">
+    <div class="red circle" onclick="green()"></div>
+    <div class="yellow circle" onclick="yellow()"></div>
+    <div class="green circle" onclick="red()"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
